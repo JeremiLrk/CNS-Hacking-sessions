@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.swp
+*.swo
+*.log
+answer.txt
+my_answer.txt
+.env
+.env.*
+*.key
+*.pem
+!practice/**/public.pem
