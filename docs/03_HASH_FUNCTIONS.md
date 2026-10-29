@@ -67,3 +67,16 @@ print(tag)
 Previous exercises: [Better Hash](../past-exercises/13_better_hash/solution.py) · [Space Race](../past-exercises/14_space_race/solution.py) · [Security Camera](../past-exercises/15_security_cam/solution.py) · [HMAC JSON](../past-exercises/16_hmac_json/solution.py) · [JWT](../past-exercises/17_jwt/solution.py)
 
 Practice [H02](../practice/round_01/exercise_03_hash_H02/challenge.md) · [H06](../practice/round_02/exercise_03_hash_H06/challenge.md) · [H07](../practice/round_03/exercise_03_hash_H07/challenge.md)
+
+
+## Links to previously solved exercises
+
+| Technique | Previous exercise | Source |
+|---|---|---|
+| Weak/custom hashing | 13 Better Hash | [solution.py](../past-exercises/13_better_hash/solution.py) |
+| Hash challenge | 14 Space Race | [solution.py](../past-exercises/14_space_race/solution.py) |
+| Digest-style network authentication | 15 Security Cam | [solution.py](../past-exercises/15_security_cam/solution.py) |
+| Signed JSON / HMAC validation | 16 HMAC JSON | [solution.py](../past-exercises/16_hmac_json/solution.py) |
+| JWT algorithm/claims validation | 17 JWT | [solution.py](../past-exercises/17_jwt/solution.py) |
+
+For techniques without a matching original exercise, use the separate practice challenges: [H02 double SHA](../practice/round_01/exercise_03_hash_H02/challenge.md), [H06 length extension](../practice/round_02/exercise_03_hash_H06/challenge.md), [H07 truncated hash collision](../practice/round_03/exercise_03_hash_H07/challenge.md).
