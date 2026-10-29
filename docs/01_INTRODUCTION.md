@@ -34,3 +34,15 @@ print(plain)
 [Caesar](../past-exercises/01_caesar/solution.py) · [Switcheroo](../past-exercises/02_switcheroo/solution.py) · [Vigenère](../past-exercises/03_french_vigenere/solution.py) · [Frequency analysis](../past-exercises/04_count_letters/solution.py) · [XOR](../past-exercises/05_dutch_xor/solution.py) · [Enigma](../past-exercises/06_enigma/solution.py)
 
 [Python syntax](PYTHON_BASICS.md) · [Terminal](UBUNTU_TERMINAL.md)
+
+
+## Links to previously solved exercises
+
+| Technique | Previous exercise | Code |
+|---|---|---|
+| Caesar | 01 Caesar | [solution.py](../past-exercises/01_caesar/solution.py) |
+| Substitution | 02 Switcheroo | [solution.py](../past-exercises/02_switcheroo/solution.py) |
+| Vigenère | 03 French Vigenère | [solution.py](../past-exercises/03_french_vigenere/solution.py) |
+| Frequency analysis | 04 Count Letters | [solution.py](../past-exercises/04_count_letters/solution.py) |
+| XOR decoding | 05 Dutch XOR | [solution.py](../past-exercises/05_dutch_xor/solution.py) |
+| Rotor cipher | 06 Enigma | [solution.py](../past-exercises/06_enigma/solution.py) |
