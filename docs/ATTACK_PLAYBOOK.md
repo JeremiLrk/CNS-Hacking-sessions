@@ -780,3 +780,28 @@ Use PyCryptodome or `cryptography`. **A full 128-bit AES key is not brute-forcea
 | Secret value appears inside ciphertext | Is it actually encrypted or just hex/Base64? | Convert encodings before attempting cryptography |
 
 **Safety:** apply these to your course lab or your own systems. This playbook documents common implementation weaknesses; it does not imply that AES, SHA-256 or HMAC are generally broken.
+
+
+## Verified directory links to previous exercises
+
+This section links to the existing folders in the repository (rather than placeholder names).
+
+| Attack pattern | Old CNS exercise |
+|---|---|
+| Caesar | [01 Caesar](../past-exercises/01_caesar/solution.py) |
+| Substitution | [02 Switcheroo](../past-exercises/02_switcheroo/solution.py) |
+| Vigenère | [03 French Vigenère](../past-exercises/03_french_vigenere/solution.py) |
+| Letter frequency | [04 Count Letters](../past-exercises/04_count_letters/solution.py) |
+| XOR | [05 Dutch XOR](../past-exercises/05_dutch_xor/solution.py) |
+| Rotor / Enigma | [06 Enigma](../past-exercises/06_enigma/solution.py) |
+| Weak pseudo-random generator | [07 Replanting](../past-exercises/07_replanting/solution.py) |
+| **Stream ciphertext bitflipping** | **[08 Secure Bank](../past-exercises/08_secure_bank/solution.py)** |
+| Limited DES keyspace | [09 DES IoT Device](../past-exercises/09_des_iotdev/solution.py) |
+| Nonce reuse | [10 Noncense](../past-exercises/10_noncense/solution.py) |
+| Meet-in-the-middle | [11 AES2](../past-exercises/11_aes2/solution.py) |
+| Secure Bank follow-up | [12 Secure Bank 2](../past-exercises/12_secure_bank_2/solution.py) |
+| Weak hash | [13 Better Hash](../past-exercises/13_better_hash/solution.py) |
+| Hash-related challenge | [14 Space Race](../past-exercises/14_space_race/solution.py) |
+| RTSP Digest | [15 Security Cam](../past-exercises/15_security_cam/solution.py) |
+| HMAC/JSON | [16 HMAC JSON](../past-exercises/16_hmac_json/solution.py) |
+| JWT | [17 JWT](../past-exercises/17_jwt/solution.py) |
