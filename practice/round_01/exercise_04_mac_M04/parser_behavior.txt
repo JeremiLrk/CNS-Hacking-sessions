@@ -1,0 +1,4 @@
+Verifier: json.loads(body), then json.dumps(obj,sort_keys=True,separators=(",",":")) and HMAC.
+Authorization: first occurrence of access key inside request wins.
+The signed normal request is viewer; target admin.
+Keep compact JSON formatting.

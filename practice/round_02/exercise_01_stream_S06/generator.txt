@@ -1,0 +1,4 @@
+state=(20077*state+12345)%65536
+output_byte=(state>>8)&255
+Initial state: unknown 16-bit integer
+Known prefix is the first 34 bytes of the plaintext.

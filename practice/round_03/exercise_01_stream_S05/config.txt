@@ -1,0 +1,1 @@
+ChaCha20, 32-byte key, 8-byte nonce. Public counter=0, private counter=3, block=64 bytes.

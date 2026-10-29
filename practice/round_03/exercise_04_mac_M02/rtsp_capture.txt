@@ -1,0 +1,5 @@
+RTSP/1.0 401 Unauthorized
+WWW-Authenticate: Digest realm="DockRTSP", nonce="f838de8a694f396e768f2ce80e9b2e02", qop="auth"
+
+DESCRIBE rtsp://camera.lab.local:8554/stream RTSP/1.0
+Authorization: Digest username="operator", realm="DockRTSP", nonce="f838de8a694f396e768f2ce80e9b2e02", uri="rtsp://camera.lab.local:8554/stream", response="27788f27b8aee69552d30e7e0e8721a8", qop=auth, nc=00000001, cnonce="a91367b5b24f0767"

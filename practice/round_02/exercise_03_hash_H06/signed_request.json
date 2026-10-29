@@ -1,0 +1,10 @@
+{
+  "original_message_ascii": "file=report.txt&role=reader",
+  "original_sha256_hex": "3361342b2acbeb71eeca7b83776cd019e0c58e3a42ea616e6ff3064da48127a7",
+  "secret_length_range_inclusive": [
+    9,
+    18
+  ],
+  "append_ascii": "&role=supervisor",
+  "construction": "SHA256(secret_bytes || message_bytes); not HMAC"
+}

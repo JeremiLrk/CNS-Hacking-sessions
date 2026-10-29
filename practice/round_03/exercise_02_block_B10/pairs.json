@@ -1,0 +1,15 @@
+{
+  "known_pairs": [
+    {
+      "plaintext_hex": "53544152542d4b4e4f574e2d30303031",
+      "ciphertext_hex": "cafabfe9cbc2e0feb5c608b9289a63a2"
+    },
+    {
+      "plaintext_hex": "53544152542d4b4e4f574e2d30303032",
+      "ciphertext_hex": "e7a7978d9c89c766c275d6603e79b104"
+    }
+  ],
+  "small_bits": 12,
+  "key_format": "n.to_bytes(2,\"big\") + b\"\\x00\"*14",
+  "order": "AES(K2, AES(K1, P))"
+}

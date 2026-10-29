@@ -1,0 +1,10 @@
+{
+  "message": {
+    "action": "read",
+    "request": {
+      "region": "north",
+      "access": "viewer"
+    }
+  },
+  "x_signature": "246b5fb75bc723951e3fbeee58ae6242de4510e4da596af88cd3f1fb1bb19dc1"
+}

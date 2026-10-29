@@ -1,0 +1,4 @@
+Every 16-byte block is separately encrypted with AES-ECB.
+Block 1 CMD=OPEN________
+Block 2 ROLE=GUEST______
+Block 3 ZONE=SAFE_______

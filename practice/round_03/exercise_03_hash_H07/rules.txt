@@ -1,0 +1,3 @@
+digest(data) = hashlib.sha256(data).digest()[:3]
+Find x != y with digest(x) == digest(y).
+Use any bytes you choose; submit hex1:hex2.

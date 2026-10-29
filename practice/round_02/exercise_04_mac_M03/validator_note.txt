@@ -1,0 +1,1 @@
+The demo validator trusts the JWT alg header. It handles unsecured JWTs incorrectly.

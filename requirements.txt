@@ -1,0 +1,4 @@
+# Optional packages for AES/DES/Salsa20 and challenge scripts.
+# Standard Python library is enough for most scripts.
+pycryptodome>=3.20,<4
+cryptography>=42,<49
