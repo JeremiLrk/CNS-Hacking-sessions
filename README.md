@@ -8,8 +8,11 @@
 git clone https://github.com/JeremiLrk/CNS-Hacking-sessions.git
 cd CNS-Hacking-sessions
 python3 --version
+python3 smoke_test.py             # Check Python basics + CLI tools
 python3 -m tools.recipes.xor_reuse --help
 ```
+
+**Quick system check:** `python3 smoke_test.py` should print `[PASS]` for basic byte operations, SHA-256, XOR and five CLI recipe help commands. It does not test live challenge servers or optional packages.
 
 **Windows PowerShell:** use `py` or `python` instead of `python3` if needed.
 
