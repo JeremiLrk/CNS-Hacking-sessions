@@ -2,7 +2,7 @@
 
 > **START HERE during the hacking session.** Fast navigation, working command examples, known pitfalls, old exercises, and offline practice. Only use on course challenges or systems you are authorized to test.
 
-## 🚀 30-second start
+##  30-second start
 
 ```bash
 git clone https://github.com/JeremiLrk/CNS-Hacking-sessions.git
@@ -25,7 +25,7 @@ python -m pip install -r requirements.txt
 
 Windows activation: `.venv\Scripts\Activate.ps1`. Many built-in Python examples do not need any pip packages.
 
-## 📚 Choose your chapter
+##  Choose your chapter
 
 | Chapter | What to recognize | Start |
 |---|---|---|
@@ -37,7 +37,7 @@ Windows activation: `.venv\Scripts\Activate.ps1`. Many built-in Python examples 
 
 **Detailed explanation and requirements:** [Attack Playbook](docs/ATTACK_PLAYBOOK.md)
 
-## 🔎 I see this in the challenge… what now?
+##  I see this in the challenge… what now?
 
 | Clue | Technique | Exact command / file |
 |---|---|---|
@@ -58,7 +58,7 @@ Windows activation: `.venv\Scripts\Activate.ps1`. Many built-in Python examples 
 
 **These are clues, not guarantees.** Check attack preconditions in the linked guides.
 
-## 🐍 Copy/paste Python essentials
+##  Copy/paste Python essentials
 
 **1. Hex, UTF-8, Base64**
 ```python
@@ -108,7 +108,7 @@ print(len(cipher), cipher[:16].hex())
 Path("output.bin").write_bytes(cipher)
 ```
 
-## 🧰 Ready-to-run CLI recipes
+##  Ready-to-run CLI recipes
 
 Always run from the **repository root** (directory containing `tools/`).
 
@@ -140,7 +140,7 @@ python3 -m tools.recipes.jwt_none --token 'HEADER.PAYLOAD.SIGNATURE' --role admi
 ```
 This is only a valid exploit against an incorrectly configured validator.
 
-## 🗂️ Original solved exercises
+## ️ Original solved exercises
 
 All **17 original CNS challenge solutions** are in [past-exercises/](past-exercises/), each with `solution.py`; some also have `original.py`.
 
@@ -151,7 +151,7 @@ All **17 original CNS challenge solutions** are in [past-exercises/](past-exerci
 | 08–12 | [Secure Bank](past-exercises/08_secure_bank/), [DES](past-exercises/09_des_iotdev/), [Nonce reuse](past-exercises/10_noncense/), [Double AES](past-exercises/11_aes2/), [Secure Bank 2](past-exercises/12_secure_bank_2/) | Symmetric |
 | 13–17 | [Better hash](past-exercises/13_better_hash/), [Space race](past-exercises/14_space_race/), [Security cam](past-exercises/15_security_cam/), [HMAC JSON](past-exercises/16_hmac_json/), [JWT](past-exercises/17_jwt/) | Hash / authentication |
 
-## 🧪 Practice exam: 12 exercises, 3 rounds
+##  Practice exam: 12 exercises, 3 rounds
 
 | Round | Stream | Block | Hash | MAC / Auth |
 |---|---|---|---|---|
@@ -170,7 +170,7 @@ python3 practice/check.py S08 --file answer.txt
 ```
 Checker returns a flag only on correct input. **The flag is not the answer you submit to the checker.**
 
-## ⚠️ Exam gotchas
+## ️ Exam gotchas
 
 - `hex` and Base64 are *encodings*, not encryption.
 - `SHA256(data)` is not reversible; search candidates if a weak password is suspected.
@@ -190,3 +190,26 @@ Checker returns a flag only on correct input. **The flag is not the answer you s
 - [Exam cheatsheet](docs/EXAM_CHEATSHEET.md)
 
 Educational course lab use only. Not an official UAntwerpen publication.
+
+
+## Technique to previous CNS exercise
+
+| Technique | Previous CNS exercise | Relevant source |
+|---|---|---|
+| Caesar brute force | 01 Caesar | [solution.py](past-exercises/01_caesar/solution.py) |
+| Substitution mapping | 02 Switcheroo | [solution.py](past-exercises/02_switcheroo/solution.py) |
+| Vigenère | 03 French Vigenère | [solution.py](past-exercises/03_french_vigenere/solution.py) |
+| Frequency analysis | 04 Count Letters | [solution.py](past-exercises/04_count_letters/solution.py) |
+| XOR | 05 Dutch XOR | [solution.py](past-exercises/05_dutch_xor/solution.py) |
+| Rotor stepping | 06 Enigma | [solution.py](past-exercises/06_enigma/solution.py) |
+| Weak random generator | 07 Replanting | [solution.py](past-exercises/07_replanting/solution.py) |
+| Stream-cipher bitflipping | 08 Secure Bank | [solution.py](past-exercises/08_secure_bank/solution.py) |
+| DES limited key search | 09 DES IoT Device | [solution.py](past-exercises/09_des_iotdev/solution.py) |
+| Keystream / nonce reuse | 10 Noncense | [solution.py](past-exercises/10_noncense/solution.py) |
+| Double AES / meet-in-the-middle | 11 AES2 | [solution.py](past-exercises/11_aes2/solution.py) |
+| Transaction manipulation | 12 Secure Bank 2 | [solution.py](past-exercises/12_secure_bank_2/solution.py) |
+| Weak hashing | 13 Better Hash | [solution.py](past-exercises/13_better_hash/solution.py) |
+| Hash-related challenge | 14 Space Race | [solution.py](past-exercises/14_space_race/solution.py) |
+| RTSP / network authentication | 15 Security Cam | [solution.py](past-exercises/15_security_cam/solution.py) |
+| HMAC / JSON | 16 HMAC JSON | [solution.py](past-exercises/16_hmac_json/solution.py) |
+| JWT authentication | 17 JWT | [solution.py](past-exercises/17_jwt/solution.py) |
