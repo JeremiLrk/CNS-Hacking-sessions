@@ -61,3 +61,17 @@ More: [Nonce reuse](../tools/stream/nonce_reuse_solver.py) · [AES modes](../too
 Previous exercises: [Secure Bank](../past-exercises/08_secure_bank/solution.py) · [DES](../past-exercises/09_des_iotdev/solution.py) · [Noncense](../past-exercises/10_noncense/solution.py) · [AES2](../past-exercises/11_aes2/solution.py) · [Secure Bank 2](../past-exercises/12_secure_bank_2/solution.py)
 
 **No authentication = possible tampering; correctly checked MAC/AEAD should reject it.**
+
+
+## Links to previously solved exercises
+
+| Attack | When to use it | Previous exercise and code |
+|---|---|---|
+| **Stream-cipher bitflipping** | Change a known plaintext field without the stream key (unauthenticated ciphertext) | **08 Secure Bank** — [solution.py](../past-exercises/08_secure_bank/solution.py) |
+| **Nonce/keystream reuse** | Known plaintext and another ciphertext under same keystream | **10 Noncense** — [solution.py](../past-exercises/10_noncense/solution.py) |
+| **Weak PRNG stream** | Predict stream from home-made random generator | **07 Replanting** — [solution.py](../past-exercises/07_replanting/solution.py) |
+| **Reduced DES keyspace** | Brute force a few unknown key bytes | **09 DES IoT Device** — [solution.py](../past-exercises/09_des_iotdev/solution.py) |
+| **Double AES / meet-in-the-middle** | Small independent keys in two encryption layers | **11 AES2** — [solution.py](../past-exercises/11_aes2/solution.py) |
+| **Transaction manipulation (variant)** | Study the second bank challenge separately | **12 Secure Bank 2** — [solution.py](../past-exercises/12_secure_bank_2/solution.py) |
+
+The CBC IV and ECB cut-and-paste examples also have [practice B04](../practice/round_02/exercise_02_block_B04/challenge.md) and [practice B03](../practice/round_01/exercise_02_block_B03/challenge.md); these are **new practice exercises**, not falsely labelled as past CNS exercises.
