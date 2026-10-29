@@ -80,3 +80,19 @@ curl -i http://HOST:PORT/
 ```
 
 **Never assume** the service is available or the port is open. For details open [ATTACK_PLAYBOOK.md](ATTACK_PLAYBOOK.md).
+
+
+## Past-exercise lookup
+
+| If you need… | Check this previous exercise |
+|---|---|
+| Classical cipher or XOR | [01 Caesar](../past-exercises/01_caesar/solution.py), [03 Vigenère](../past-exercises/03_french_vigenere/solution.py), [05 XOR](../past-exercises/05_dutch_xor/solution.py), [06 Enigma](../past-exercises/06_enigma/solution.py) |
+| Stream bitflipping | **[08 Secure Bank](../past-exercises/08_secure_bank/solution.py)** |
+| Reused nonce/keystream | [10 Noncense](../past-exercises/10_noncense/solution.py) |
+| Weak PRNG | [07 Replanting](../past-exercises/07_replanting/solution.py) |
+| Small DES keyspace | [09 DES IoT Device](../past-exercises/09_des_iotdev/solution.py) |
+| Double AES | [11 AES2](../past-exercises/11_aes2/solution.py) |
+| Weak hashes | [13 Better Hash](../past-exercises/13_better_hash/solution.py) |
+| HTTP/RTSP Digest | [15 Security Cam](../past-exercises/15_security_cam/solution.py) |
+| Signed JSON/HMAC | [16 HMAC JSON](../past-exercises/16_hmac_json/solution.py) |
+| JWT | [17 JWT](../past-exercises/17_jwt/solution.py) |
