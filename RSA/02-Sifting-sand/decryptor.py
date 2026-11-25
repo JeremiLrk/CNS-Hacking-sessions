@@ -5,7 +5,7 @@ import json
 # Load challenge
 # --------------------------------------------------
 
-with open("challenge1.json", "r") as f:
+with open("challenge.json", "r") as f:
     challenge = json.load(f)
 
 n = challenge["n"]
@@ -63,4 +63,3 @@ try:
 
 except (ValueError, OverflowError):
     print("[-] Invalid private key or decryption failed.")
-

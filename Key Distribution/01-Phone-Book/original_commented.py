@@ -5,6 +5,7 @@ URL = "http://cns-test.idlab.uantwerpen.be:50011"
 params = requests.get(URL + "/params")
 directory = requests.get(URL + "/directory")
 
+# .text toont de respons als tekst. De latere berekeningen gebruiken vaste waarden.
 print(params.text)
 print(directory.text)
 
@@ -35,6 +36,7 @@ K = pow(c1, chosen_private, p)
 K_inverse = pow(K, -1, p)
 Message = pow(c2*K_inverse, 1, p)
 
+# Rond de bitlengte naar boven af tot een geheel aantal bytes.
 length = (Message.bit_length() + 7) // 8
 answer = Message.to_bytes(length, byteorder="big")
 print(answer)

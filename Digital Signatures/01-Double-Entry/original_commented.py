@@ -2,6 +2,7 @@ p = 6746884642898045158586100770737756293393842294217621284683764334092675665317
 q = 828501186989456969634087545115821181461968049491
 g = 4771346124025851787008537691957768340119708194592789003251318422138883835679180113071550689720819538734622694321320763375269264613538770908685537501076695
 y = 51421953478148373341502434435209534945979140302697738580686333856428250387931563065532531018805972910300248283132473420251649607983785126255366520848710
+# Beschrijving van de hashregel. Door de komma is dit een tuple met een element.
 hash = "H(m) = int(sha256(m)) mod q",
 signatures =  [
         {
@@ -21,9 +22,11 @@ flag_encryption = "flag XOR keystream, keystream = sha256(f'{x}:0') || sha256(f'
 
 
 import hashlib
+# Elke JSON-record bevat de oorspronkelijke berichttekst en het paar (r, s).
 M1 = signatures[0]["message"]
 M2 = signatures[1]["message"]
 
+# digest() levert bytes. Big-endian leest de eerste byte als de meest significante.
 H1 = int.from_bytes(hashlib.sha256(M1.encode()).digest(), "big")
 hash1 = pow(H1,1,q)
 
@@ -44,6 +47,7 @@ x = pow((k*s1 - hash1)*r_inverse, 1, q)
 
 
 keystream_temp = hashlib.sha256(f'{x}:0'.encode()).hexdigest() + hashlib.sha256(f'{x}:1'.encode()).hexdigest()
+# Lengtes in dit blok zijn aantallen hextekens: twee tekens per byte.
 size = len(encrypted_flag)
 keystream = keystream_temp[:size]
 print(keystream_temp)

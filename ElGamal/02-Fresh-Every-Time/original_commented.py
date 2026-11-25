@@ -1,3 +1,4 @@
+# Cursusnotatie: q, alpha en Ya komen overeen met p, g en y in de JSON.
 q = 11655642371051559137021899193675264155833927634094563432113185127386727205937460119710022717731068222597389976317754800759209574764650965841375803852559979
 alpha = 2
 Ya = 9800591634283795563239010288422807427250772972248905077913156331845129940720568824686127789650137814974517570792931867542026304326067442859164029332748259
@@ -9,6 +10,7 @@ cipher_flag = [14523318027576369775015720931929873375969113093169871718218410730
 #C1,1 = cipher_known[0] = alpha^k1 mod q
 #C1,2 = cipher_flag[0] = 2 * C1,1 = 2 * alpha^k1 mod q = 2^{k1 + 1} mod q => C2,1 = K * M mod q = cipher_known[1]
 
+# Dezelfde tekst heeft bij dezelfde bytevolgorde dezelfde getalrepresentatie.
 M1 = int.from_bytes(known_plaintext.encode(), "big")
 M1_reverse = pow(M1, -1, q)
 K1 = pow(cipher_known[1] * M1_reverse, 1, q)
@@ -21,6 +23,7 @@ print(K2)
 K_reverse = pow(K2, -1, q)
 Message = pow(cipher_flag[1] * K_reverse, 1, q)
 
+# Rond het aantal bits naar boven af tot een geheel aantal bytes.
 length = (Message.bit_length() + 7) // 8
 answer = Message.to_bytes(length, byteorder="big")
 print(answer)

@@ -1,3 +1,4 @@
+# Parameters from the supplied challenge. Each index identifies one encryption.
 n = 101164278883894774922139025949873680374606904119729767050737265109641929032719363887695290815092456963890739165789420209876536114234127203761331452413133387081667132258226024217329926043878039897012679815131639007461969477778116864059518749652783062461980802294924999951612333367172462758617901123947384896971
 e1 = 65537
 e2 = 17
@@ -8,16 +9,20 @@ c2 = 110732368662928263208052161845285227532635229960932529803139739724811402981
 import sympy
 
 answer = sympy.gcdex(e1,e2)
+# gcdex returns two coefficients followed by the gcd.
+# This assignment shadows Python's built-in list name.
 list = list(answer)
 a = int(list[0])
 b = int(list[1])
 # a*e_1+b*e_2= gcd(e_1,e_2) => gevolg van extended euclidean algo
+# This prints a Boolean diagnostic. A failed check would not stop execution.
 print(a*e1 + b*e2 == 1)
 #we weten M = (M^65537)^-8 * (M^17)^30841
 #c1 =M^{65537} mod n en c2 = M^{17} mod n => M^17 = c2 mod n en hetzelfde voor de andere
 #je krijgt dan (c2 mod n)^-8 en (c1 mod n)^30841
 M = (pow(c1, a, n) * pow(c2, b, n)) % n
 print(M)
+# Round the number of bits up to a whole number of bytes.
 length = (M.bit_length() + 7) // 8
 answer = M.to_bytes(length, byteorder="big")
 print(answer)
